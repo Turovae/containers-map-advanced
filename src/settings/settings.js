@@ -9,7 +9,7 @@ export default class Settings {
     this.userSettings = new Map();
   }
 
-  set settings(settings) {
+  changeSetting(settings) {
     const validUserTheme = ['light', 'gray'];
     const validUserMusic = ['pop', 'rock', 'chillout', 'off'];
     const validUserDifficulty = ['normal', 'hard', 'nightmare'];

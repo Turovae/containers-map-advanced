@@ -82,7 +82,7 @@ test.each([
   'test settings with %s',
   (_, userSettings, expected) => {
     const config = new Settings();
-    config.settings = userSettings;
+    config.changeSetting(userSettings);
     expect(config.settings).toEqual(expected);
   },
 );
